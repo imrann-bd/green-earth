@@ -24,7 +24,71 @@
 </head>
 
 <body>
-    <h1>Hello</h1>
+
+    <header>
+        <div class="navbar bg-[#15803D] shadow-sm max-w-[1920px] mx-auto md:py-[24px] md:px-[135px]">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100  rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a>About</a></li>
+                        <li><a>Gallery</a></li>
+                        <li><a>Plant a Tree</a></li>
+                    </ul>
+                </div>
+                <a class="text-white text-xl">Green Earth</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-white">
+                    <li><a>About</a></li>
+                    <li><a>Gallery</a></li>
+                    <li><a>Plant a Tree</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn rounded-3xl bg-[#FACC15] text-[#15803D] border-none shadow-sm">Plant a Tree</a>
+            </div>
+        </div>
+    </header>
+    <!-- banner section -->
+    <section class="bg-[#CFF0DC] text-center py-[100px] space-y-5 px-[100px] relative ">
+        <img class="md:absolute left-0 bottom-[-20px]" src="./assets/hero-leaf1.png" alt="">
+        <h2 class="text-5xl font-bold">Plant a Tree, Grow a Future</h2>
+        <p>Join our mission to plant 1 million trees and make the Earth greener for future <br>
+            generations.</p>
+        <a class="btn rounded-3xl bg-[#FACC15] text-[#15803D] border-none shadow-sm">Plant a Tree</a>
+        <img class="md:absolute right-0 bottom-0" src="./assets/hero-leaf2.png" alt="">
+    </section>
+
+    <!-- categories section -->
+    <section class="bg-[#dcfce7]">
+        <h2 class="pt-[100px] py-8 text-center text-3xl font-medium">Choose Your Trees</h2>
+        <div class="flex flex-col md:flex-row justify-between  md:max-w-[1650px] mx-auto">
+            <div class="min-w-[250px]">
+                <h2 class="text-center text-[20px] font-semibold">categories</h2>
+                <div id="categories-contianer" class="space-y-2 mt-5 px-4">
+                    
+                </div>
+            </div>
+            <div class="bg-gray-500 flex-1">
+                <h3>contetn</h3>
+            </div>
+            <div class="bg-gray-600 min-w-[250px]">
+                <h3>Your Cart</h3>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="./script/script.js"></script>
 </body>
 
 </html>
