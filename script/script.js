@@ -10,7 +10,7 @@ const displayCategories = (categories) => {
     categories.forEach(categorie => {
         const btnCategories = document.createElement('div');
         btnCategories.innerHTML = `
-    <button  class=" w-[100%] py-3  rounded-sm hover:bg-[#15803D] hover:text-white">${categorie.category_name}</button>
+    <button onclick="loadCategoriesLabel('${categorie.category_name}')" class=" w-[100%] py-3  rounded-sm hover:bg-[#15803D] hover:text-white">${categorie.category_name}</button>
     `;
         categoriesContainer.append(btnCategories)
     })
@@ -31,7 +31,7 @@ const displaAllPlanets = (planets) => {
         const allPlants = document.createElement('div')
         allPlants.innerHTML = `
         <div class=" bg-white shadow-sm p-5 rounded-md space-y-4">
-                        <img src="${plant.image}" alt="" width="300px">
+                        <img id="img" src="${plant.image}" alt="" width="300px">
                         <h2 class="font-semibold text-[14px]">${plant.name}</h2>
                         <p class="text-gray-500 font-[12px]">${plant.description}</p>
                         <div class="flex justify-between">
@@ -45,3 +45,4 @@ const displaAllPlanets = (planets) => {
     })
 }
 loadAllplanets()
+

@@ -1,7 +1,13 @@
 * {
     font-family: "Inter", sans-serif;
 }
-img{
+/* img{
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+} */
+#img {
+   
     height: 300px;
     width: 400px;
     object-fit: cover;
